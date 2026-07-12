@@ -24,3 +24,24 @@ navs.addEventListener("click", function() {
 )
 
 })
+const typingText = document.getElementById("typing-text");
+
+const roles = [
+    "Python Full Stack Developer",
+    "Frontend Developer",
+    "AI Enthusiast",
+    "Open Source Learner"
+];
+const dot = [
+    '.',
+    '..',
+    '...',
+]
+let index = 0;
+setInterval(function(){
+    typingText.textContent =roles[index]+dot[index];
+    index++;
+    if (index === roles.length) {
+        index = 0;
+    }
+},1000);
