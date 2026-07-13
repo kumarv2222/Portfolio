@@ -36,12 +36,29 @@ const dot = [
     '.',
     '..',
     '...',
+    '....'
 ]
-let index = 0;
+let roleIndex = 0;
+let dotIndex = 0;
 setInterval(function(){
-    typingText.textContent =roles[index]+dot[index];
-    index++;
-    if (index === roles.length) {
-        index = 0;
+    typingText.textContent =roles[roleIndex]+dot[dotIndex];
+    roleIndex++;
+    dotIndex++;
+    if (roleIndex === roles.length) {
+        roleIndex = 0;
     }
+    if (dotIndex === dot.length) {
+        dotIndex = 0;
+    }
+    
 },1000);
+
+const themebtn=document.getElementById("theme-btn");
+themebtn.addEventListener("click",function(){
+    document.body.classList.toggle("light-mode");
+    if(documenr.body.classList.contains("light-mode")){
+        themebtn.textContent="Dark Mode";
+    }else{
+        themebtn.textContent="Light Mode";
+    }
+});

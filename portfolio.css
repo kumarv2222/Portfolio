@@ -241,3 +241,39 @@ input[type="text"], input[type="email"] {
     background-color: rgb(24, 23, 23);;
     color: white;
 }
+.light-mode {
+    background-color: white;
+    color: black;
+}
+/* 
+.light-mode .navbar {
+    background-color: #f4f4f4;
+} */
+
+.light-mode .skills {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.light-mode .tech {
+    background-color: #ececec;
+    color: black;
+}
+
+.light-mode .educated {
+    background-color: #f5f5f5;
+    border: #000000;
+    color: black;
+}
+
+.light-mode a {
+    color: blue;
+}
+.light-mode .navbar{
+
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+}
+.light-mode {
+    background:white;
+}
