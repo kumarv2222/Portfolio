@@ -53,12 +53,12 @@ setInterval(function(){
     
 },1000);
 
-const themebtn=document.getElementById("theme-btn");
-themebtn.addEventListener("click",function(){
-    document.body.classList.toggle("light-mode");
-    if(documenr.body.classList.contains("light-mode")){
-        themebtn.textContent="Dark Mode";
-    }else{
-        themebtn.textContent="Light Mode";
-    }
-});
+// const themebtn=document.getElementById("theme-btn");
+// themebtn.addEventListener("click",function(){
+//     document.body.classList.toggle("light-mode");
+//     if(documenr.body.classList.contains("light-mode")){
+//         themebtn.textContent="Dark Mode";
+//     }else{
+//         themebtn.textContent="Light Mode";
+//     }
+// });
